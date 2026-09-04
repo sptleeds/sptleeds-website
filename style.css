@@ -1,0 +1,45 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;font-family:Arial,Helvetica,sans-serif}
+.page{position:relative;width:100%;line-height:0}
+.reference{display:block;width:100%;height:auto;margin:0;padding:0}
+.hotspot{position:absolute;display:block;background:transparent;z-index:2}
+.home{left:49.2%;top:10.8%;width:6.5%;height:5.5%}
+.products{left:54.7%;top:10.8%;width:8.5%;height:5.5%}
+.about{left:63.2%;top:10.8%;width:7.0%;height:5.5%}
+.contact{left:70.8%;top:10.8%;width:5.5%;height:5.5%}
+.touch{left:82.0%;top:8.2%;width:13.0%;height:7.0%}
+.view{left:9.8%;top:69.0%;width:18.0%;height:7.2%}
+.phone{left:29.0%;top:69.0%;width:18.0%;height:7.2%}
+#home,#products,#about,#contact{scroll-margin-top:20px}
+
+.whatsapp{
+  position:fixed;
+  right:24px;
+  bottom:24px;
+  z-index:100;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  padding:13px 18px;
+  border-radius:28px;
+  background:#25D366;
+  color:#fff;
+  font:700 14px Arial,Helvetica,sans-serif;
+  line-height:1;
+  box-shadow:0 5px 18px rgba(0,0,0,.20);
+}
+.wa-icon{
+  width:25px;
+  height:25px;
+  border:2px solid #fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:17px;
+  line-height:1;
+}
+@media(max-width:520px){
+  .whatsapp{right:16px;bottom:16px;padding:12px 14px}
+}
