@@ -6,16 +6,13 @@
 
     <title>Contact Us | SPT Leeds</title>
 
-    <!-- Main stylesheet -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <style>
-        /* Contact page only */
-
+        /* Contact page */
         .contact-page {
             width: 100%;
             overflow-x: hidden;
@@ -137,17 +134,9 @@
             word-break: break-word;
         }
 
-        .contact-card a:hover {
-            text-decoration: underline;
-        }
-
         .address-text {
             color: #29466d !important;
             font-weight: 600;
-        }
-
-        .hours {
-            margin-top: 5px;
         }
 
         .hours-row {
@@ -156,10 +145,6 @@
             gap: 20px;
             padding: 10px 0;
             border-bottom: 1px solid #edf1f6;
-        }
-
-        .hours-row:last-child {
-            border-bottom: none;
         }
 
         .hours-day {
@@ -211,7 +196,6 @@
             text-decoration: none;
             font-weight: 700;
             font-size: 16px;
-            transition: 0.2s ease;
         }
 
         .contact-button.primary {
@@ -219,20 +203,12 @@
             color: #ffffff;
         }
 
-        .contact-button.primary:hover {
-            background: #0d58bd;
-        }
-
         .contact-button.secondary {
             background: #ffffff;
             color: #1268dc;
         }
 
-        .contact-button.secondary:hover {
-            background: #edf5ff;
-        }
-
-        /* WhatsApp floating button */
+        /* Floating WhatsApp */
         .whatsapp-float {
             position: fixed;
             right: 22px;
@@ -244,7 +220,6 @@
             justify-content: center;
             gap: 9px;
 
-            width: auto;
             min-width: 52px;
             height: 52px;
             padding: 0 18px;
@@ -257,52 +232,25 @@
             font-size: 15px;
             font-weight: 700;
 
-            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.18);
+            box-shadow: 0 5px 18px rgba(0,0,0,0.18);
         }
 
         .whatsapp-float i {
             font-size: 23px;
         }
 
-        .whatsapp-float:hover {
-            background: #1ebe5d;
-            color: #ffffff;
-            transform: translateY(-2px);
-        }
-
-        /* Prevent oversized images */
-        .contact-page img {
-            max-width: 100%;
-            height: auto;
-        }
-
+        /* Mobile */
         @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
             .contact-hero {
                 padding: 65px 20px;
             }
 
             .contact-section {
                 padding: 60px 20px;
-            }
-
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-card {
-                padding: 25px;
-            }
-
-            .contact-cta {
-                padding: 30px 20px;
-            }
-
-            .whatsapp-float {
-                right: 15px;
-                bottom: 15px;
-                min-width: 50px;
-                height: 50px;
-                padding: 0 15px;
             }
         }
 
@@ -315,219 +263,291 @@
                 width: 50px;
                 padding: 0;
             }
-
-            .hours-row {
-                font-size: 14px;
-            }
         }
     </style>
 </head>
 
 <body>
 
-    <div class="contact-page">
+<!-- =====================================================
+     HEADER
+     ===================================================== -->
 
-        <!-- CONTACT HERO -->
-        <section class="contact-hero">
-            <div class="contact-hero-inner">
+<header class="site-header">
 
-                <div class="contact-label">
-                    CONTACT SPT LEEDS
-                </div>
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="top-bar-inner">
 
-                <h1>
-                    Get In <span>Touch</span>
-                </h1>
-
-                <p>
-                    Whether you're a local repair shop, trade customer or looking
-                    for mobile phone parts and accessories, we're here to help.
-                </p>
-
-            </div>
-        </section>
-
-
-        <!-- CONTACT DETAILS -->
-        <section class="contact-section">
-
-            <div class="contact-container">
-
-                <div class="section-label">
-                    WE'RE HERE TO HELP
-                </div>
-
-                <h2>
-                    Contact Our Team
-                </h2>
-
-                <p class="contact-intro">
-                    Get in touch with SPT Leeds for enquiries about our mobile
-                    phone parts, accessories, wholesale supply and current
-                    availability.
-                </p>
-
-
-                <div class="contact-grid">
-
-                    <!-- PHONE / WHATSAPP -->
-                    <div class="contact-card">
-
-                        <div class="contact-icon">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-
-                        <h3>
-                            Phone / WhatsApp
-                        </h3>
-
-                        <p>
-                            Speak to us directly or message us on WhatsApp.
-                        </p>
-
-                        <a href="https://wa.me/447979192999"
-                           target="_blank"
-                           rel="noopener">
-                            +44 7979 192999
-                        </a>
-
-                    </div>
-
-
-                    <!-- EMAIL -->
-                    <div class="contact-card">
-
-                        <div class="contact-icon">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-
-                        <h3>
-                            Email
-                        </h3>
-
-                        <p>
-                            Send us your enquiry and we'll get back to you.
-                        </p>
-
-                        <a href="mailto:sptleedslimited@gmail.com">
-                            sptleedslimited@gmail.com
-                        </a>
-
-                    </div>
-
-
-                    <!-- BUSINESS LOCATION -->
-                    <div class="contact-card">
-
-                        <div class="contact-icon">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-
-                        <h3>
-                            Business Location
-                        </h3>
-
-                        <p>
-                            Visit us at:
-                        </p>
-
-                        <p class="address-text">
-                            Park House<br>
-                            Wilmington St<br>
-                            Leeds LS7 2BP
-                        </p>
-
-                    </div>
-
-
-                    <!-- TRADING HOURS -->
-                    <div class="contact-card">
-
-                        <div class="contact-icon">
-                            <i class="fa-regular fa-clock"></i>
-                        </div>
-
-                        <h3>
-                            Trading Hours
-                        </h3>
-
-                        <p>
-                            Our current opening hours are:
-                        </p>
-
-                        <div class="hours">
-
-                            <div class="hours-row">
-                                <span class="hours-day">
-                                    Monday – Saturday
-                                </span>
-
-                                <span class="hours-time">
-                                    10:00 – 19:00
-                                </span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- GET IN TOUCH CTA -->
-                <div class="contact-cta">
-
-                    <h2>
-                        Need Parts or Accessories?
-                    </h2>
-
-                    <p>
-                        Contact SPT Leeds today for wholesale enquiries,
-                        product availability and more information.
-                    </p>
-
-                    <div class="contact-buttons">
-
-                        <a class="contact-button primary"
-                           href="https://wa.me/447979192999"
-                           target="_blank"
-                           rel="noopener">
-
-                            <i class="fa-brands fa-whatsapp"></i>
-                            WhatsApp Us
-
-                        </a>
-
-                        <a class="contact-button secondary"
-                           href="mailto:sptleedslimited@gmail.com">
-
-                            <i class="fa-solid fa-envelope"></i>
-                            Email Us
-
-                        </a>
-
-                    </div>
-
-                </div>
-
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                Park House, Wilmington St, Leeds LS7 2BP
             </div>
 
-        </section>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                +44 7979 192999
+            </div>
 
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                sptleedslimited@gmail.com
+            </div>
+
+            <div class="top-right">
+                <span>🚚 Wholesale Prices</span>
+                <span>🛡 Trusted Supply</span>
+                <span>⚡ Fast Delivery</span>
+            </div>
+
+        </div>
     </div>
 
 
-    <!-- FLOATING WHATSAPP -->
-    <a class="whatsapp-float"
-       href="https://wa.me/447979192999"
-       target="_blank"
-       rel="noopener"
-       aria-label="Contact SPT Leeds on WhatsApp">
+    <!-- MAIN NAVIGATION -->
+    <div class="main-nav">
 
-        <i class="fa-brands fa-whatsapp"></i>
-        <span>WhatsApp</span>
+        <a href="index.html" class="site-logo">
+            <img src="assets/logo.png" alt="SPT Leeds">
+        </a>
 
-    </a>
+        <nav>
+            <a href="index.html">Home</a>
+
+            <a href="products.html">
+                Products
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="contact.html" class="active">
+                Contact
+            </a>
+
+            <a href="#" class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+
+            <a href="contact.html" class="get-touch">
+                Get In Touch
+                <span>→</span>
+            </a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     CONTACT PAGE
+     ===================================================== -->
+
+<div class="contact-page">
+
+    <section class="contact-hero">
+
+        <div class="contact-hero-inner">
+
+            <div class="contact-label">
+                CONTACT SPT LEEDS
+            </div>
+
+            <h1>
+                Get In <span>Touch</span>
+            </h1>
+
+            <p>
+                Whether you're a local repair shop, trade customer or looking
+                for mobile phone parts and accessories, we're here to help.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="contact-section">
+
+        <div class="contact-container">
+
+            <div class="section-label">
+                WE'RE HERE TO HELP
+            </div>
+
+            <h2>
+                Contact Our Team
+            </h2>
+
+            <p class="contact-intro">
+                Get in touch with SPT Leeds for enquiries about our mobile
+                phone parts, accessories, wholesale supply and current availability.
+            </p>
+
+
+            <div class="contact-grid">
+
+                <!-- PHONE -->
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <h3>
+                        Phone / WhatsApp
+                    </h3>
+
+                    <p>
+                        Speak to us directly or message us on WhatsApp.
+                    </p>
+
+                    <a href="https://wa.me/447979192999"
+                       target="_blank"
+                       rel="noopener">
+                        +44 7979 192999
+                    </a>
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <h3>
+                        Email
+                    </h3>
+
+                    <p>
+                        Send us your enquiry and we'll get back to you.
+                    </p>
+
+                    <a href="mailto:sptleedslimited@gmail.com">
+                        sptleedslimited@gmail.com
+                    </a>
+
+                </div>
+
+
+                <!-- LOCATION -->
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <h3>
+                        Business Location
+                    </h3>
+
+                    <p>
+                        Visit us at:
+                    </p>
+
+                    <p class="address-text">
+                        Park House<br>
+                        Wilmington St<br>
+                        Leeds LS7 2BP
+                    </p>
+
+                </div>
+
+
+                <!-- HOURS -->
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+
+                    <h3>
+                        Trading Hours
+                    </h3>
+
+                    <p>
+                        Our current opening hours are:
+                    </p>
+
+                    <div class="hours-row">
+
+                        <span class="hours-day">
+                            Monday – Saturday
+                        </span>
+
+                        <span class="hours-time">
+                            10:00 – 19:00
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- GET IN TOUCH -->
+            <div class="contact-cta">
+
+                <h2>
+                    Need Parts or Accessories?
+                </h2>
+
+                <p>
+                    Contact SPT Leeds today for wholesale enquiries,
+                    product availability and more information.
+                </p>
+
+                <div class="contact-buttons">
+
+                    <a class="contact-button primary"
+                       href="https://wa.me/447979192999"
+                       target="_blank"
+                       rel="noopener">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+                        WhatsApp Us
+
+                    </a>
+
+                    <a class="contact-button secondary"
+                       href="mailto:sptleedslimited@gmail.com">
+
+                        <i class="fa-solid fa-envelope"></i>
+                        Email Us
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a class="whatsapp-float"
+   href="https://wa.me/447979192999"
+   target="_blank"
+   rel="noopener"
+   aria-label="Contact SPT Leeds on WhatsApp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>WhatsApp</span>
+
+</a>
+
 
 </body>
 </html>
