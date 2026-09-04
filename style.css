@@ -43,3 +43,63 @@ body{margin:0;background:#fff;font-family:Arial,Helvetica,sans-serif}
 @media(max-width:520px){
   .whatsapp{right:16px;bottom:16px;padding:12px 14px}
 }
+/* About page content */
+.about-content {
+  position: absolute;
+  top: 330px;
+  left: 10%;
+  width: 45%;
+  z-index: 5;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.about-content h1 {
+  font-size: 42px;
+  margin: 0 0 25px;
+  color: #102b50;
+}
+
+.about-content h2 {
+  font-size: 28px;
+  margin: 25px 0 15px;
+  color: #102b50;
+}
+
+.about-content p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 0 0 18px;
+  color: #253f62;
+}
+
+.about-content ul {
+  padding-left: 25px;
+  margin-bottom: 25px;
+}
+
+.about-content li {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #253f62;
+}
+
+.about-button {
+  display: inline-block;
+  padding: 14px 25px;
+  background: #1264d8;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    padding: 30px 20px;
+  }
+}
