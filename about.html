@@ -1,465 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | SPT Leeds</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | SPT Leeds</title>
 
-    <link rel="stylesheet" href="style.css">
-
-    <style>
-        /* ABOUT PAGE HEADER */
-        .about-header {
-            width: 100%;
-            background: #ffffff;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        .about-header-inner {
-            max-width: 1440px;
-            margin: 0 auto;
-            min-height: 155px;
-            padding: 20px 40px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            box-sizing: border-box;
-        }
-
-        .about-logo-link {
-            display: block;
-            width: 330px;
-            max-width: 38%;
-            text-decoration: none;
-            line-height: 0;
-        }
-
-        .about-logo {
-            display: block;
-            width: 100%;
-            height: auto;
-            max-width: 330px;
-        }
-
-        .about-navigation {
-            display: flex;
-            align-items: center;
-            gap: 38px;
-        }
-
-        .about-navigation a {
-            color: #071d41;
-            text-decoration: none;
-            font-size: 17px;
-            font-weight: 500;
-            white-space: nowrap;
-        }
-
-        .about-navigation a:hover {
-            color: #1267d9;
-        }
-
-        .about-navigation .active {
-            color: #1267d9;
-            position: relative;
-        }
-
-        .about-navigation .active::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: -16px;
-            height: 3px;
-            background: #1267d9;
-            border-radius: 3px;
-        }
-
-        .about-touch {
-            background: #1267d9;
-            color: #ffffff !important;
-            padding: 17px 27px;
-            border-radius: 9px;
-            font-weight: 700 !important;
-            box-shadow: 0 8px 20px rgba(18, 103, 217, 0.18);
-        }
-
-        /* ABOUT HERO */
-        .about-hero {
-            position: relative;
-            overflow: hidden;
-            background: linear-gradient(110deg, #f0f7ff, #ffffff, #eef6ff);
-            padding: 95px 40px;
-        }
-
-        .about-hero::before {
-            content: "";
-            position: absolute;
-            width: 230px;
-            height: 230px;
-            left: -115px;
-            top: -30px;
-            background: #d8e8ff;
-            border-radius: 50%;
-        }
-
-        .about-hero::after {
-            content: "";
-            position: absolute;
-            width: 230px;
-            height: 230px;
-            right: -115px;
-            bottom: -80px;
-            background: #d8e8ff;
-            border-radius: 50%;
-        }
-
-        .about-hero-inner {
-            position: relative;
-            z-index: 1;
-            max-width: 970px;
-            margin: 0 auto;
-        }
-
-        .about-eyebrow {
-            margin: 0 0 25px;
-            color: #1267d9;
-            font-size: 15px;
-            font-weight: 700;
-            letter-spacing: 5px;
-        }
-
-        .about-hero h1 {
-            margin: 0;
-            color: #102c54;
-            font-size: clamp(48px, 6vw, 78px);
-            line-height: 1.05;
-            font-weight: 800;
-        }
-
-        .about-hero h1 span {
-            color: #1267d9;
-        }
-
-        .about-hero p {
-            max-width: 720px;
-            margin: 25px 0 0;
-            color: #173d6b;
-            font-size: 21px;
-            line-height: 1.6;
-        }
-
-        /* ABOUT CONTENT */
-        .about-main {
-            background: #ffffff;
-            padding: 90px 40px 100px;
-        }
-
-        .about-content {
-            max-width: 970px;
-            margin: 0 auto;
-        }
-
-        .about-section-label {
-            margin: 0 0 25px;
-            color: #1267d9;
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 5px;
-        }
-
-        .about-content h2 {
-            margin: 0 0 28px;
-            color: #102c54;
-            font-size: clamp(38px, 5vw, 58px);
-            line-height: 1.08;
-            font-weight: 800;
-        }
-
-        .about-content h2 span {
-            color: #1267d9;
-        }
-
-        .about-content p {
-            margin: 0 0 22px;
-            color: #294b73;
-            font-size: 18px;
-            line-height: 1.8;
-        }
-
-        .about-content h3 {
-            margin: 45px 0 22px;
-            color: #102c54;
-            font-size: 30px;
-        }
-
-        .about-points {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .about-points li {
-            position: relative;
-            margin: 0 0 16px;
-            padding-left: 30px;
-            color: #294b73;
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        .about-points li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: #1267d9;
-            font-weight: 800;
-        }
-
-        .about-cta {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 16px 28px;
-            background: #1267d9;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 700;
-        }
-
-        /* MOBILE */
-        @media (max-width: 900px) {
-            .about-header-inner {
-                min-height: 120px;
-                padding: 18px 22px;
-            }
-
-            .about-logo-link {
-                width: 260px;
-                max-width: 45%;
-            }
-
-            .about-navigation {
-                gap: 18px;
-            }
-
-            .about-navigation a {
-                font-size: 14px;
-            }
-
-            .about-touch {
-                padding: 13px 18px;
-            }
-        }
-
-        @media (max-width: 650px) {
-            .about-header-inner {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 25px;
-            }
-
-            .about-logo-link {
-                width: 270px;
-                max-width: 90%;
-            }
-
-            .about-navigation {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 20px;
-            }
-
-            .about-navigation .active::after {
-                bottom: -8px;
-            }
-
-            .about-hero {
-                padding: 65px 25px;
-            }
-
-            .about-main {
-                padding: 65px 25px;
-            }
-
-            .about-hero h1 {
-                font-size: 48px;
-            }
-        }
-    </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-    <!-- TOP INFORMATION BAR -->
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <span>📍 Park House, Wilmington St, Leeds LS7 2BP</span>
-            <span>|</span>
-            <span>📞 +44 7979 192999</span>
-            <span>|</span>
-            <span>✉️ sptleedslimited@gmail.com</span>
-        </div>
-
-        <div class="top-bar-right">
-            <span>🚚 Wholesale Prices</span>
-            <span>🛡 Trusted Supply</span>
-            <span>⚡ Fast Delivery</span>
-        </div>
-    </div>
-
+  <main class="page">
 
     <!-- HEADER -->
-    <header class="about-header">
-        <div class="about-header-inner">
+    <header class="site-header">
 
-            <!-- LOGO -->
-            <!-- Clicking the logo takes the visitor to the homepage -->
-            <a href="index.html" class="about-logo-link" aria-label="SPT Leeds Home">
-                <img
-                    src="assets/spt-leeds-logo.png"
-                    alt="SPT Leeds - Smart Parts Traders"
-                    class="about-logo"
-                >
-            </a>
+      <div class="header-logo">
+        <a href="./index.html" aria-label="SPT Leeds Home">
+          <img
+            src="./assets/sptleeds4-reference-hd.png"
+            alt="SPT Leeds - Smart Parts Traders"
+          >
+        </a>
+      </div>
 
-            <!-- NAVIGATION -->
-            <nav class="about-navigation" aria-label="Main navigation">
+      <nav class="main-nav">
+        <a href="./index.html">Home</a>
+        <a href="./products.html">Products</a>
+        <a href="./about.html" class="active">About Us</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./contact.html" class="get-in-touch">Get In Touch →</a>
+      </nav>
 
-                <a href="index.html">Home</a>
-
-                <a href="products.html">Products</a>
-
-                <a href="about.html" class="active">About Us</a>
-
-                <a href="contact.html">Contact</a>
-
-                <a href="contact.html" class="about-touch">
-                    Get In Touch&nbsp; →
-                </a>
-
-            </nav>
-
-        </div>
     </header>
 
 
     <!-- ABOUT HERO -->
     <section class="about-hero">
 
-        <div class="about-hero-inner">
+      <div class="about-hero-content">
 
-            <p class="about-eyebrow">
-                SPT LEEDS - SMART PARTS TRADERS
-            </p>
-
-            <h1>
-                About <span>SPT Leeds</span>
-            </h1>
-
-            <p>
-                Your trusted wholesale partner for quality mobile phone
-                parts and accessories.
-            </p>
-
+        <div class="eyebrow">
+          SPT LEEDS - SMART PARTS TRADERS
         </div>
+
+        <h1>
+          About <span>SPT Leeds</span>
+        </h1>
+
+        <p>
+          Your trusted wholesale partner for quality mobile phone parts
+          and accessories.
+        </p>
+
+      </div>
 
     </section>
 
 
     <!-- ABOUT CONTENT -->
-    <main class="about-main">
+    <section class="about-section">
 
-        <div class="about-content">
+      <div class="about-container">
 
-            <p class="about-section-label">
-                ABOUT SPT LEEDS
-            </p>
-
-            <h2>
-                Your Trusted <span>Mobile Parts</span> Partner
-            </h2>
-
-            <p>
-                Established in 2023, SPT Leeds (Smart Parts Traders) is a
-                growing wholesale supplier of mobile phone parts and
-                accessories, proudly serving local mobile phone repair
-                shops, independent businesses and trade customers.
-            </p>
-
-            <p>
-                Since starting our business, we have focused on building
-                strong relationships with local customers and providing
-                reliable access to the mobile phone parts and accessories
-                they need for their day-to-day business.
-            </p>
-
-            <p>
-                We understand that repair businesses need dependable
-                suppliers, competitive wholesale pricing and fast
-                service. Our aim is to make sourcing mobile phone parts
-                straightforward, reliable and convenient for our trade
-                customers.
-            </p>
-
-            <h3>
-                Why Choose SPT Leeds?
-            </h3>
-
-            <ul class="about-points">
-
-                <li>
-                    Established in 2023 and growing through trusted
-                    customer relationships.
-                </li>
-
-                <li>
-                    Proud to serve local mobile phone repair shops,
-                    independent businesses and trade customers.
-                </li>
-
-                <li>
-                    Competitive wholesale pricing for businesses and
-                    regular trade customers.
-                </li>
-
-                <li>
-                    Quality mobile phone parts and accessories for a wide
-                    range of repair and retail requirements.
-                </li>
-
-                <li>
-                    Fast and reliable supply to help keep your business
-                    moving.
-                </li>
-
-                <li>
-                    Friendly and dependable customer service built around
-                    long-term business relationships.
-                </li>
-
-            </ul>
-
-            <a href="contact.html" class="about-cta">
-                Get In Touch →
-            </a>
-
+        <div class="eyebrow">
+          ABOUT SPT LEEDS
         </div>
 
-    </main>
+        <h2>
+          Your Trusted <span>Mobile Parts</span> Partner
+        </h2>
+
+        <p>
+          Established in 2023, SPT Leeds (Smart Parts Traders) is a growing
+          wholesale supplier of mobile phone parts and accessories, proudly
+          serving local mobile phone repair shops, independent businesses
+          and trade customers.
+        </p>
+
+        <p>
+          Since starting our business in 2023, we have been building strong
+          relationships with local mobile phone repair shops and customers
+          by focusing on dependable service, competitive trade prices and
+          quality products.
+        </p>
+
+        <p>
+          We understand the demands of the mobile phone repair trade.
+          Our customers need the right parts, competitive prices and
+          reliable supply to keep their businesses moving. We aim to make
+          sourcing mobile phone parts and accessories simple, convenient
+          and dependable.
+        </p>
+
+        <p>
+          We supply a growing range of mobile phone parts and accessories
+          for repair businesses and retailers. As our business continues
+          to grow, our focus remains on providing professional customer
+          service and developing long-term relationships with our trade
+          customers.
+        </p>
 
 
-    <!-- WHATSAPP -->
-    <a
-        href="https://wa.me/447979192999"
-        target="_blank"
-        rel="noopener"
-        class="whatsapp"
-        aria-label="Chat with SPT Leeds on WhatsApp"
-    >
-        <span>◉</span> WhatsApp
-    </a>
+        <h3>Why Choose SPT Leeds?</h3>
+
+        <ul class="about-list">
+          <li>Established in 2023 and proudly growing with the local trade</li>
+          <li>Serving local mobile phone repair shops and trade customers</li>
+          <li>Competitive wholesale and trade pricing</li>
+          <li>Quality mobile phone parts and accessories</li>
+          <li>Reliable supply and responsive customer support</li>
+          <li>Professional service focused on long-term customer relationships</li>
+        </ul>
+
+        <a href="./contact.html" class="about-button">
+          Get In Touch →
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
 
 </body>
 </html>
