@@ -471,11 +471,11 @@ a {
    WHATSAPP BUTTON
    ========================================================= */
 
-.whatsapp-button {
+.whatsapp {
     position: fixed;
     right: 28px;
     bottom: 25px;
-    z-index: 999;
+    z-index: 9999;
     background: #20c967;
     color: #ffffff;
     padding: 15px 25px;
@@ -483,9 +483,30 @@ a {
     font-size: 16px;
     font-weight: 700;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    line-height: 1;
 }
 
-.whatsapp-button:hover {
+.wa-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.wa-icon svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+    fill: currentColor;
+}
+
+.whatsapp:hover {
     transform: translateY(-2px);
 }
 
@@ -649,11 +670,17 @@ a {
         font-size: 17px;
     }
 
-    .whatsapp-button {
+    .whatsapp {
         right: 15px;
         bottom: 15px;
         padding: 13px 19px;
         font-size: 14px;
+    }
+
+    .wa-icon,
+    .wa-icon svg {
+        width: 21px;
+        height: 21px;
     }
 }
 
