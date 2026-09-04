@@ -720,3 +720,26 @@ body.about-page {
         padding-right: 5%;
     }
 }
+
+/* =========================================================
+   HOMEPAGE REFERENCE IMAGE
+   ========================================================= */
+
+body.home-page {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.home-page .page {
+    width: 100%;
+    min-height: auto;
+    position: relative;
+}
+
+.home-page .reference {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
