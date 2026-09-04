@@ -656,3 +656,67 @@ a {
         font-size: 14px;
     }
 }
+
+
+/* =========================================================
+   ABOUT PAGE - FINAL STABILITY / LAYOUT FIX
+   ========================================================= */
+
+body.about-page {
+    overflow-x: hidden;
+}
+
+.about-page .main-header {
+    width: 100%;
+}
+
+.about-page .about-hero {
+    width: 100%;
+}
+
+.about-page .about-hero-content {
+    width: min(1400px, 100%);
+    margin: 0 auto;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.about-page .about-main {
+    width: 100%;
+}
+
+.about-page .about-section {
+    width: min(1400px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+@media (max-width: 1200px) {
+    .about-page .about-hero-content {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .about-page .about-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 900px) {
+    .about-page .about-hero-content,
+    .about-page .about-section {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-page .about-hero-content,
+    .about-page .about-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
