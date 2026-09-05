@@ -21,11 +21,10 @@
         .products-intro h2 span { color: #1268df; }
         .products-intro p { font-size: 18px; line-height: 1.7; color: #405777; margin: 0; }
         .product-categories { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
-        .product-card { background: #ffffff; border: 1px solid #dce7f4; border-radius: 12px; padding: 25px 30px 30px; min-height: 190px; box-shadow: 0 8px 25px rgba(16, 40, 74, 0.06); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+        .product-card { background: #ffffff; border: 1px solid #dce7f4; border-radius: 12px; padding: 18px 18px 24px; min-height: 270px; box-shadow: 0 8px 25px rgba(16, 40, 74, 0.06); transition: transform 0.2s ease, box-shadow 0.2s ease; display: flex; flex-direction: column; }
         .product-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(16, 40, 74, 0.10); }
-        .product-icon { width: 100%; height: 150px; display: flex; align-items: center; justify-content: center; background: #ffffff; border-radius: 10px; margin-bottom: 18px; overflow: hidden; }
-        .product-icon.photo { background-image: url('assets/product-images/product-categories-sprite.svg'); background-repeat: no-repeat; background-size: 300% 400%; background-color: #ffffff; font-size: 0; }
-        .product-icon.photo img { display: none; }
+        .product-icon.photo { width: 100%; height: 220px; display: flex; align-items: center; justify-content: center; background: #ffffff; border-radius: 10px; margin-bottom: 18px; overflow: hidden; }
+        .product-icon.photo img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; }
         .product-card h3 { color: #10284a; font-size: 22px; line-height: 1.25; margin: 0; font-weight: 700; }
         .product-card p { display: none; }
         .products-bottom { width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 6% 90px; }
@@ -40,8 +39,8 @@
         .products-page .wa-icon svg { width: 22px !important; height: 22px !important; display: block !important; fill: currentColor !important; }
         .products-page .whatsapp:hover { transform: translateY(-2px); }
         @media (max-width: 1100px) { .product-categories { grid-template-columns: repeat(2, 1fr); } }
-        @media (max-width: 900px) { .products-hero { min-height: 300px; } .products-hero-content { padding: 55px 7%; } .products-section { padding: 65px 7%; } .products-bottom { padding: 0 7% 65px; } .products-bottom-inner { padding: 45px 30px; } .product-categories { grid-template-columns: 1fr; } }
-        @media (max-width: 600px) { .products-hero h1 { font-size: 45px; } .products-hero p { font-size: 17px; } .products-section { padding: 55px 5%; } .products-intro h2 { font-size: 40px; } .product-card { padding: 22px 24px 28px; } .product-icon { height: 130px; } .products-bottom { padding: 0 5% 55px; } .products-bottom-inner { padding: 38px 22px; } .products-page .whatsapp { right: 15px !important; bottom: 15px !important; height: 52px !important; padding: 0 18px !important; font-size: 14px !important; } }
+        @media (max-width: 900px) { .products-hero { min-height: 300px; } .products-hero-content { padding: 55px 7%; } .products-section { padding: 65px 7%; } .products-bottom { padding: 0 7% 65px; } .products-bottom-inner { padding: 45px 30px; } .product-categories { grid-template-columns: 1fr; } .product-icon.photo { height: 210px; } }
+        @media (max-width: 600px) { .products-hero h1 { font-size: 45px; } .products-hero p { font-size: 17px; } .products-section { padding: 55px 5%; } .products-intro h2 { font-size: 40px; } .product-card { padding: 14px 14px 22px; } .product-icon.photo { height: 190px; } .products-bottom { padding: 0 5% 55px; } .products-bottom-inner { padding: 38px 22px; } .products-page .whatsapp { right: 15px !important; bottom: 15px !important; height: 52px !important; padding: 0 18px !important; font-size: 14px !important; } }
     </style>
 </head>
 <body class="products-page">
@@ -50,18 +49,18 @@
 <section class="products-hero"><div class="products-hero-content"><div class="eyebrow">SPT LEEDS - SMART PARTS TRADERS</div><h1>Our <span>Products</span></h1><p>Quality mobile phone parts and accessories for repair shops, independent businesses and trade customers.</p></div></section>
 <main class="products-main"><section class="products-section"><div class="products-intro"><div class="eyebrow">WHAT WE SUPPLY</div><h2>Mobile Parts & <span>Accessories</span></h2><p>We supply a growing range of mobile phone parts and accessories for repair shops, retailers and trade customers. Our range is continually expanding, so please contact us for current stock and availability.</p></div>
 <div class="product-categories">
-<div class="product-card"><div class="product-icon photo" style="background-position:0% 0%" aria-label="Mobile phone parts"></div><h3>Mobile Phone Parts</h3></div>
-<div class="product-card"><div class="product-icon photo" style="background-position:50% 0%" aria-label="Mobile LCDs"></div><h3>Mobile LCDs</h3></div>
-<div class="product-card"><div class="product-icon photo" style="background-position:100% 0%" aria-label="Mobile Batteries"></div><h3>Mobile Batteries</h3></div>
-<div class="product-card"><div class="product-icon photo" style="background-position:0% 33.333%" aria-label="Phone Cases"></div><h3>Phone Cases</h3></div>
-<div class="product-card"><div class="product-icon photo" style="background-position:50% 33.333%" aria-label="Screen Protectors"></div><h3>Screen Protectors</h3></div>
-<div class="product-card"><div class="product-icon photo" style="background-position:100% 33.333%" aria-label="Car Chargers"></div><h3>Car Chargers</h3></div>
-<div class="product-card"><div class="product-icon photo" style="background-position:0% 66.666%" aria-label="Car Holders"></div><h3>Car Holders</h3></div>
-<div class="product-card"><div class="product-icon photo" style="background-position:50% 66.666%" aria-label="Headphones"></div><h3>Headphones</h3></div>
-<div class="product-card"><div class="product-icon photo" style="background-position:100% 66.666%" aria-label="Speakers"></div><h3>Speakers</h3></div>
-<div class="product-card"><div class="product-icon photo" style="background-position:0% 100%" aria-label="OTG Accessories"></div><h3>OTG Accessories</h3></div>
-<div class="product-card"><div class="product-icon photo" style="background-position:50% 100%" aria-label="Power Banks"></div><h3>Power Banks</h3></div>
-<div class="product-card"><div class="product-icon photo" style="background-position:100% 100%" aria-label="Repair Tools and Accessories"></div><h3>Repair Tools &amp; Accessories</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="https://akinfotools.com/wp-content/uploads/2021/10/Untitled_design__1_-removebg-preview.png" alt="Mobile phone parts"></div><h3>Mobile Phone Parts</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="https://i.ebayimg.com/images/g/NaUAAOSwvoxg3Ie6/s-l1200.webp" alt="Mobile LCDs"></div><h3>Mobile LCDs</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="https://static.mobilesentrix.com/catalog/product/image/1/7/1743477882-67eb5c7a07980.webp" alt="Mobile batteries"></div><h3>Mobile Batteries</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="https://images.unsplash.com/photo-1771142061210-95e97225641e?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=80&amp;w=1200" alt="Phone cases"></div><h3>Phone Cases</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="https://i5-mx.walmartimages.com/mg/gm/3pp/asr/37c2d1c5-8f1c-461d-902c-d48f733a6e48.96a1594a4c9808d224141c799d90fd41.jpeg?odnBg=ffffff&amp;odnHeight=1200&amp;odnWidth=1200" alt="Screen protectors"></div><h3>Screen Protectors</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="https://i5.walmartimages.com/asr/59d64d4a-ea8c-4065-9b10-358e52e01fa2.598817c55e8a213dc4d5248fbd815714.jpeg?odnBg=FFFFFF&amp;odnHeight=900&amp;odnWidth=900" alt="Car chargers"></div><h3>Car Chargers</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="https://media.takealot.com/covers_images/603d6cd60d1b48d9b2ae448de0b70820/s-zoom.file" alt="Car holders"></div><h3>Car Holders</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="https://cdn.media.amplience.net/i/truworths/prod3187369_1?fmt=auto" alt="Headphones"></div><h3>Headphones</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="https://i5.walmartimages.com/seo/Bluetooth-Speaker-Outdoor-Portable-Wireless-Speaker-Bluetooth-5-0-Loud-Stereo-Bass-Family-Party-Gift-Black-FMY_995c565c-d7c6-4214-8bcb-cc0ae1cd19f4.986932dbc6ec64ac2cd07528b5a2c8df.jpeg" alt="Speakers"></div><h3>Speakers</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="https://acdn-us.mitiendanube.com/stores/001/474/949/products/s-k072-80954c4483ceec174117747046937466-640-0.webp" alt="OTG accessories"></div><h3>OTG Accessories</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="https://i5.walmartimages.com/asr/3f382942-64ab-489d-80b0-9bfed97e32e1.54adec3cc59efb5bf2583789e2cd8995.jpeg" alt="Power banks"></div><h3>Power Banks</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="https://i5.walmartimages.com/asr/3edb01ca-dd15-4861-bb91-88c06ac68671.9216bfbaef0f929bb8f0d24c62054dfe.jpeg?odnBg=FFFFFF&amp;odnHeight=900&amp;odnWidth=900" alt="Repair tools and accessories"></div><h3>Repair Tools &amp; Accessories</h3></div>
 </div></section>
 <section class="products-bottom"><div class="products-bottom-inner"><div class="eyebrow">WHOLESALE SUPPLY</div><h2>Wholesale Supply for Trade Customers</h2><p>We are continually expanding our range of mobile phone parts and accessories. For current stock, availability and wholesale pricing, please get in touch with our team.</p><a href="contact.html" class="products-contact-btn">Get In Touch →</a></div></section></main>
 <a href="https://wa.me/447979192999" class="whatsapp" target="_blank" rel="noopener" aria-label="Chat with SPT Leeds on WhatsApp"><span class="wa-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.82 3 3 8.82 3 16c0 2.3.6 4.55 1.74 6.54L3.1 29l6.65-1.61A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3Zm0 23.7c-2.05 0-4.06-.55-5.82-1.6l-.42-.25-3.95.96.97-3.85-.27-.44A10.73 10.73 0 1 1 16 26.7Z"/><path d="M21.88 18.65c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.52-.16-.74.16-.22.32-.85 1.05-1.04 1.27-.19.22-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.6-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.5.14-.66.14-.14.32-.38.48-.57.16-.19.22-.32.33-.54.11-.22.05-.41-.03-.57-.08-.16-.74-1.78-1.01-2.44-.27-.65-.54-.56-.74-.57h-.63c-.22 0-.57.08-.87.41-.3.32-1.14 1.11-1.14 2.71s1.17 3.14 1.33 3.36c.16.22 2.61 3.98 6.32 5.58.88.38 1.57.61 2.11.78.89.28 1.7.24 2.34.15.71-.11 2.2-.9 2.51-1.77.31-.87.31-1.61.22-1.77-.09-.16-.32-.24-.64-.4Z"/></svg></span></a>
