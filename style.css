@@ -287,7 +287,8 @@ img { display: block; max-width: 100%; height: auto; }
 .whatsapp:hover, .whatsapp-float:hover { transform:translateY(-2px) !important; }
 .whatsapp .wa-icon, .whatsapp-float .wa-icon { width:28px !important; height:28px !important; display:flex !important; align-items:center !important; justify-content:center !important; }
 .whatsapp svg, .whatsapp-float svg { width:28px !important; height:28px !important; min-width:28px !important; min-height:28px !important; max-width:28px !important; max-height:28px !important; display:block !important; fill:currentColor; }
-.whatsapp > span:last-child, .whatsapp-float > span { display:none !important; }
+/* Keep the WhatsApp icon visible; hide only any optional text span. */
+.whatsapp > span:not(.wa-icon), .whatsapp-float > span:not(.wa-icon) { display:none !important; }
 
 /* RESPONSIVE */
 @media (max-width:1200px) {
