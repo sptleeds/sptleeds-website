@@ -33,19 +33,8 @@
         .product-card { background: #ffffff; border: 1px solid #dce7f4; border-radius: 12px; padding: 32px 30px; min-height: 190px; box-shadow: 0 8px 25px rgba(16, 40, 74, 0.06); transition: transform 0.2s ease, box-shadow 0.2s ease; }
         .product-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(16, 40, 74, 0.10); }
         .product-icon { width: 54px; height: 54px; display: flex; align-items: center; justify-content: center; background: #edf5ff; border-radius: 10px; font-size: 27px; margin-bottom: 22px; overflow: hidden; }
-        .product-icon.photo { background-image: url("assets/product-category-sprite.jpg"); background-repeat: no-repeat; background-size: 400% 300%; font-size: 0; }
-        .product-icon.photo.p1 { background-position: 0% 0%; }
-        .product-icon.photo.p2 { background-position: 33.333% 0%; }
-        .product-icon.photo.p3 { background-position: 66.666% 0%; }
-        .product-icon.photo.p4 { background-position: 100% 0%; }
-        .product-icon.photo.p5 { background-position: 0% 50%; }
-        .product-icon.photo.p6 { background-position: 33.333% 50%; }
-        .product-icon.photo.p7 { background-position: 66.666% 50%; }
-        .product-icon.photo.p8 { background-position: 100% 50%; }
-        .product-icon.photo.p9 { background-position: 0% 100%; }
-        .product-icon.photo.p10 { background-position: 33.333% 100%; }
-        .product-icon.photo.p11 { background-position: 66.666% 100%; }
-        .product-icon.photo.p12 { background-position: 100% 100%; }
+        .product-icon.photo { background: #edf5ff; font-size: 0; }
+        .product-icon.photo img { width: 100%; height: 100%; display: block; object-fit: cover; }
         .product-card h3 { color: #10284a; font-size: 22px; line-height: 1.25; margin: 0 0 12px; font-weight: 700; }
         .product-card p { color: #405777; font-size: 16px; line-height: 1.6; margin: 0; }
 
@@ -121,18 +110,18 @@
     </div>
 
     <div class="product-categories">
-        <div class="product-card"><div class="product-icon photo p1"></div><h3>Mobile Phone Parts</h3><p>Reliable replacement parts for mobile phone repairs and servicing.</p></div>
-        <div class="product-card"><div class="product-icon photo p2"></div><h3>Mobile LCDs</h3><p>Mobile phone LCD displays and replacement screens for a range of devices.</p></div>
-        <div class="product-card"><div class="product-icon photo p3"></div><h3>Mobile Batteries</h3><p>Replacement batteries suitable for mobile phone repair businesses.</p></div>
-        <div class="product-card"><div class="product-icon photo p4"></div><h3>Phone Cases</h3><p>Protective phone cases for different mobile devices and everyday use.</p></div>
-        <div class="product-card"><div class="product-icon photo p5"></div><h3>Screen Protectors</h3><p>Screen protection products for mobile phones and everyday use.</p></div>
-        <div class="product-card"><div class="product-icon photo p6"></div><h3>Car Chargers</h3><p>Convenient charging accessories for use in vehicles.</p></div>
-        <div class="product-card"><div class="product-icon photo p7"></div><h3>Car Holders</h3><p>Practical phone holders and mounting accessories for vehicles.</p></div>
-        <div class="product-card"><div class="product-icon photo p8"></div><h3>Headphones</h3><p>Headphones and audio accessories for everyday mobile use.</p></div>
-        <div class="product-card"><div class="product-icon photo p9"></div><h3>Speakers</h3><p>Portable speakers and audio accessories.</p></div>
-        <div class="product-card"><div class="product-icon photo p10"></div><h3>OTG Accessories</h3><p>OTG accessories and connectivity solutions for compatible devices.</p></div>
-        <div class="product-card"><div class="product-icon photo p11"></div><h3>Power Banks</h3><p>Portable power banks and charging solutions for mobile devices and everyday use.</p></div>
-        <div class="product-card"><div class="product-icon photo p12"></div><h3>Repair Tools &amp; Accessories</h3><p>Repair tools and accessories for mobile phone servicing and repairs.</p></div>
+        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/mobile-parts.svg" alt="Mobile phone parts"></div><h3>Mobile Phone Parts</h3><p>Reliable replacement parts for mobile phone repairs and servicing.</p></div>
+        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/lcds.svg" alt="Mobile LCDs"></div><h3>Mobile LCDs</h3><p>Mobile phone LCD displays and replacement screens for a range of devices.</p></div>
+        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/batteries.svg" alt="Mobile batteries"></div><h3>Mobile Batteries</h3><p>Replacement batteries suitable for mobile phone repair businesses.</p></div>
+        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/cases.svg" alt="Phone cases"></div><h3>Phone Cases</h3><p>Protective phone cases for different mobile devices and everyday use.</p></div>
+        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/screen-protectors.svg" alt="Screen protectors"></div><h3>Screen Protectors</h3><p>Screen protection products for mobile phones and everyday use.</p></div>
+        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/car-chargers.svg" alt="Car chargers"></div><h3>Car Chargers</h3><p>Convenient charging accessories for use in vehicles.</p></div>
+        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/car-holders.svg" alt="Car holders"></div><h3>Car Holders</h3><p>Practical phone holders and mounting accessories for vehicles.</p></div>
+        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/headphones.svg" alt="Headphones"></div><h3>Headphones</h3><p>Headphones and audio accessories for everyday mobile use.</p></div>
+        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/speakers.svg" alt="Speakers"></div><h3>Speakers</h3><p>Portable speakers and audio accessories.</p></div>
+        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/otg.svg" alt="OTG accessories"></div><h3>OTG Accessories</h3><p>OTG accessories and connectivity solutions for compatible devices.</p></div>
+        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/power-banks.svg" alt="Power banks"></div><h3>Power Banks</h3><p>Portable power banks and charging solutions for mobile devices and everyday use.</p></div>
+        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/repair-tools.svg" alt="Repair tools and accessories"></div><h3>Repair Tools &amp; Accessories</h3><p>Repair tools and accessories for mobile phone servicing and repairs.</p></div>
     </div>
 </section>
 
