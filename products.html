@@ -24,8 +24,8 @@
         .product-card { background: #ffffff; border: 1px solid #dce7f4; border-radius: 12px; padding: 25px 30px 30px; min-height: 190px; box-shadow: 0 8px 25px rgba(16, 40, 74, 0.06); transition: transform 0.2s ease, box-shadow 0.2s ease; }
         .product-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(16, 40, 74, 0.10); }
         .product-icon { width: 100%; height: 150px; display: flex; align-items: center; justify-content: center; background: #ffffff; border-radius: 10px; margin-bottom: 18px; overflow: hidden; }
-        .product-icon.photo { background: #ffffff; font-size: 0; }
-        .product-icon.photo img { width: 100%; height: 100%; display: block; object-fit: contain; padding: 0; box-sizing: border-box; }
+        .product-icon.photo { background-image: url('assets/product-images/product-categories-sprite.jpg'); background-repeat: no-repeat; background-size: 300% 400%; background-color: #ffffff; font-size: 0; }
+        .product-icon.photo img { display: none; }
         .product-card h3 { color: #10284a; font-size: 22px; line-height: 1.25; margin: 0; font-weight: 700; }
         .product-card p { display: none; }
         .products-bottom { width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 6% 90px; }
@@ -50,18 +50,18 @@
 <section class="products-hero"><div class="products-hero-content"><div class="eyebrow">SPT LEEDS - SMART PARTS TRADERS</div><h1>Our <span>Products</span></h1><p>Quality mobile phone parts and accessories for repair shops, independent businesses and trade customers.</p></div></section>
 <main class="products-main"><section class="products-section"><div class="products-intro"><div class="eyebrow">WHAT WE SUPPLY</div><h2>Mobile Parts & <span>Accessories</span></h2><p>We supply a growing range of mobile phone parts and accessories for repair shops, retailers and trade customers. Our range is continually expanding, so please contact us for current stock and availability.</p></div>
 <div class="product-categories">
-<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:0% 0%" alt="Mobile phone parts"></div><h3>Mobile Phone Parts</h3></div>
-<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:50% 0%" alt="Mobile LCDs"></div><h3>Mobile LCDs</h3></div>
-<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:100% 0%" alt="Mobile Batteries"></div><h3>Mobile Batteries</h3></div>
-<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:0% 33.333%" alt="Phone Cases"></div><h3>Phone Cases</h3></div>
-<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:50% 33.333%" alt="Screen Protectors"></div><h3>Screen Protectors</h3></div>
-<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:100% 33.333%" alt="Car Chargers"></div><h3>Car Chargers</h3></div>
-<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:0% 66.666%" alt="Car Holders"></div><h3>Car Holders</h3></div>
-<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:50% 66.666%" alt="Headphones"></div><h3>Headphones</h3></div>
-<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:100% 66.666%" alt="Speakers"></div><h3>Speakers</h3></div>
-<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:0% 100%" alt="OTG Accessories"></div><h3>OTG Accessories</h3></div>
-<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:50% 100%" alt="Power Banks"></div><h3>Power Banks</h3></div>
-<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:100% 100%" alt="Repair Tools and Accessories"></div><h3>Repair Tools &amp; Accessories</h3></div>
+<div class="product-card"><div class="product-icon photo" style="background-position:0% 0%" aria-label="Mobile phone parts"></div><h3>Mobile Phone Parts</h3></div>
+<div class="product-card"><div class="product-icon photo" style="background-position:50% 0%" aria-label="Mobile LCDs"></div><h3>Mobile LCDs</h3></div>
+<div class="product-card"><div class="product-icon photo" style="background-position:100% 0%" aria-label="Mobile Batteries"></div><h3>Mobile Batteries</h3></div>
+<div class="product-card"><div class="product-icon photo" style="background-position:0% 33.333%" aria-label="Phone Cases"></div><h3>Phone Cases</h3></div>
+<div class="product-card"><div class="product-icon photo" style="background-position:50% 33.333%" aria-label="Screen Protectors"></div><h3>Screen Protectors</h3></div>
+<div class="product-card"><div class="product-icon photo" style="background-position:100% 33.333%" aria-label="Car Chargers"></div><h3>Car Chargers</h3></div>
+<div class="product-card"><div class="product-icon photo" style="background-position:0% 66.666%" aria-label="Car Holders"></div><h3>Car Holders</h3></div>
+<div class="product-card"><div class="product-icon photo" style="background-position:50% 66.666%" aria-label="Headphones"></div><h3>Headphones</h3></div>
+<div class="product-card"><div class="product-icon photo" style="background-position:100% 66.666%" aria-label="Speakers"></div><h3>Speakers</h3></div>
+<div class="product-card"><div class="product-icon photo" style="background-position:0% 100%" aria-label="OTG Accessories"></div><h3>OTG Accessories</h3></div>
+<div class="product-card"><div class="product-icon photo" style="background-position:50% 100%" aria-label="Power Banks"></div><h3>Power Banks</h3></div>
+<div class="product-card"><div class="product-icon photo" style="background-position:100% 100%" aria-label="Repair Tools and Accessories"></div><h3>Repair Tools &amp; Accessories</h3></div>
 </div></section>
 <section class="products-bottom"><div class="products-bottom-inner"><div class="eyebrow">WHOLESALE SUPPLY</div><h2>Wholesale Supply for Trade Customers</h2><p>We are continually expanding our range of mobile phone parts and accessories. For current stock, availability and wholesale pricing, please get in touch with our team.</p><a href="contact.html" class="products-contact-btn">Get In Touch →</a></div></section></main>
 <a href="https://wa.me/447979192999" class="whatsapp" target="_blank" rel="noopener" aria-label="Chat with SPT Leeds on WhatsApp"><span class="wa-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.82 3 3 8.82 3 16c0 2.3.6 4.55 1.74 6.54L3.1 29l6.65-1.61A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3Zm0 23.7c-2.05 0-4.06-.55-5.82-1.6l-.42-.25-3.95.96.97-3.85-.27-.44A10.73 10.73 0 1 1 16 26.7Z"/><path d="M21.88 18.65c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.52-.16-.74.16-.22.32-.85 1.05-1.04 1.27-.19.22-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.6-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.5.14-.66.14-.14.32-.38.48-.57.16-.19.22-.32.33-.54.11-.22.05-.41-.03-.57-.08-.16-.74-1.78-1.01-2.44-.27-.65-.54-.56-.74-.57h-.63c-.22 0-.57.08-.87.41-.3.32-1.14 1.11-1.14 2.71s1.17 3.14 1.33 3.36c.16.22 2.61 3.98 6.32 5.58.88.38 1.57.61 2.11.78.89.28 1.7.24 2.34.15.71-.11 2.2-.9 2.51-1.77.31-.87.31-1.61.22-1.77-.09-.16-.32-.24-.64-.4Z"/></svg></span></a>
