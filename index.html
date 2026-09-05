@@ -1,49 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SPT Leeds | Smart Parts Traders</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SPT Leeds | Smart Parts Traders</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="home-page">
 
-  <main class="page">
+    <!-- TOP BAR -->
+    <div class="top-bar">
 
-    <!-- WEBSITE DESIGN IMAGE -->
-    <img
-      class="reference"
-      src="assets/sptleeds4-reference-hd.png"
-      alt="SPT Leeds website"
+        <div class="top-bar-left">
+            <span>📍 Park House, Wilmington St, Leeds LS7 2BP</span>
+            <span>|</span>
+
+            <a href="tel:+447979192999">
+                📞 +44 7979 192999
+            </a>
+
+            <span>|</span>
+
+            <a href="mailto:sptleedslimited@gmail.com">
+                ✉️ sptleedslimited@gmail.com
+            </a>
+        </div>
+
+        <div class="top-bar-right">
+            <span>🚚 Wholesale Prices</span>
+            <span>🛡 Trusted Supply</span>
+            <span>⚡ Fast Delivery</span>
+        </div>
+
+    </div>
+
+
+    <!-- HEADER -->
+    <header class="main-header">
+
+        <div class="logo-container">
+            <a href="index.html">
+                <img
+                    src="assets/spt-leeds-logo.png"
+                    alt="SPT Leeds - Smart Parts Traders"
+                >
+            </a>
+        </div>
+
+
+        <nav class="main-nav">
+
+            <a href="index.html" class="active">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="#" class="search-icon" aria-label="Search">
+                ⌕
+            </a>
+
+            <a href="contact.html" class="header-button">
+                Get In Touch
+                <span>→</span>
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <!-- LEFT -->
+            <div class="hero-left">
+
+                <div class="eyebrow">
+                    SPT LEEDS - SMART PARTS TRADERS
+                </div>
+
+                <h1>
+                    Wholesale Mobile<br>
+                    Phone<br>
+                    <span>Parts &amp; Accessories</span>
+                </h1>
+
+                <p>
+                    Your trusted wholesale partner for high-quality
+                    mobile phone parts and accessories at competitive prices.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="products.html"
+                        class="primary-button"
+                    >
+                        <span>📦</span>
+                        <span>View Products</span>
+                        <span>→</span>
+                    </a>
+
+                    <a
+                        href="tel:+447979192999"
+                        class="secondary-button"
+                    >
+                        <span>📞</span>
+                        <span>+44 7979 192999</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT FEATURES -->
+            <div class="hero-features">
+
+                <div class="hero-feature">
+
+                    <div class="hero-feature-icon">
+                        📱
+                    </div>
+
+                    <h3>
+                        MOBILE PARTS
+                    </h3>
+
+                </div>
+
+
+                <div class="hero-feature">
+
+                    <div class="hero-feature-icon">
+                        ⚙️
+                    </div>
+
+                    <h3>
+                        ACCESSORIES
+                    </h3>
+
+                </div>
+
+
+                <div class="hero-feature">
+
+                    <div class="hero-feature-icon">
+                        🤝
+                    </div>
+
+                    <h3>
+                        WHOLESALE
+                    </h3>
+
+                </div>
+
+
+                <div class="hero-feature">
+
+                    <div class="hero-feature-icon">
+                        🚚
+                    </div>
+
+                    <h3>
+                        FAST SUPPLY
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHATSAPP -->
+    <a
+        class="whatsapp"
+        href="https://wa.me/447979192999"
+        target="_blank"
+        rel="noopener"
+        aria-label="Chat with SPT Leeds on WhatsApp"
     >
 
-    <!-- INVISIBLE NAVIGATION HOTSPOTS -->
-    <a class="hotspot home" href="index.html" aria-label="Home"></a>
-    <a class="hotspot products" href="products.html" aria-label="Products"></a>
-    <a class="hotspot about" href="about.html" aria-label="About Us"></a>
-    <a class="hotspot contact" href="contact.html" aria-label="Contact"></a>
-    <a class="hotspot touch" href="contact.html" aria-label="Get In Touch"></a>
-    <a class="hotspot view" href="products.html" aria-label="View Products"></a>
-    <a class="hotspot phone" href="tel:+447979192999" aria-label="Call SPT Leeds"></a>
+        <span class="wa-icon">
 
-  </main>
+            <svg
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+            >
 
-  <!-- WHATSAPP -->
-  <a
-    class="whatsapp"
-    href="https://wa.me/447979192999"
-    target="_blank"
-    rel="noopener"
-    aria-label="Chat with SPT Leeds on WhatsApp"
-  >
-    <span class="wa-icon">
-      <svg viewBox="0 0 32 32" aria-hidden="true">
-        <path d="M16 3C8.82 3 3 8.82 3 16c0 2.3.6 4.55 1.74 6.54L3.1 29l6.65-1.61A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3Zm0 23.7c-2.05 0-4.06-.55-5.82-1.6l-.42-.25-3.95.96.97-3.85-.27-.44A10.73 10.73 0 1 1 16 26.7Zm5.88-8.05c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.52-.16-.74.16-.22.32-.85 1.05-1.04 1.27-.19.22-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.6-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.5.14-.66.14-.14.32-.38.48-.57.16-.19.22-.32.33-.54.11-.22.05-.41-.03-.57-.08-.16-.74-1.78-1.01-2.44-.27-.65-.54-.56-.74-.57h-.63c-.22 0-.57.08-.87.41-.3.32-1.14 1.11-1.14 2.71s1.17 3.14 1.33 3.36c.16.22 2.3 3.51 5.57 4.92.78.34 1.39.54 1.86.69.78.25 1.49.22 2.05.13.63-.09 1.9-.78 2.17-1.54.27-.76.27-1.41.19-1.54-.08-.13-.3-.21-.63-.38Z"/>
-      </svg>
-    </span>
-    <span>WhatsApp</span>
-  </a>
+                <path d="M16 3C8.82 3 3 8.82 3 16c0 2.3.6 4.55 1.74 6.54L3.1 29l6.65-1.61A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3Zm0 23.7c-2.05 0-4.06-.55-5.82-1.6l-.42-.25-3.95.96.97-3.85-.27-.44A10.73 10.73 0 1 1 16 26.7Zm5.88-8.05c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.52-.16-.74.16-.22.32-.85 1.05-1.04 1.27-.19.22-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.6-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.5.14-.66.14-.14.32-.38.48-.57.16-.19.22-.32.33-.54.11-.22.05-.41-.03-.57-.08-.16-.74-1.78-1.01-2.44-.27-.65-.54-.56-.74-.57h-.63c-.22 0-.57.08-.87.41-.3.32-1.14 1.11-1.14 2.71s1.17 3.14 1.33 3.36c.16.22 2.3 3.5 5.57 4.91.78.34 1.39.55 1.86.7.78.25 1.49.21 2.05.13.63-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.13-.3-.21-.63-.38Z"/>
+
+            </svg>
+
+        </span>
+
+        <span>
+            WhatsApp
+        </span>
+
+    </a>
+
 
 </body>
 </html>
