@@ -5,22 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products | SPT Leeds</title>
     <link rel="stylesheet" href="style.css">
-
     <style>
         .products-page { background: #ffffff; overflow-x: hidden; }
-
-        .products-hero {
-            width: 100%; min-height: 370px; display: flex; align-items: center;
-            text-align: center;
-            background: radial-gradient(circle at 0% 40%, #d9e9ff 0, #d9e9ff 130px, transparent 131px), radial-gradient(circle at 100% 70%, #d9e9ff 0, #d9e9ff 160px, transparent 161px), linear-gradient(110deg, #f3f8ff 0%, #ffffff 55%, #edf5ff 100%);
-            position: relative; overflow: hidden;
-        }
+        .products-hero { width: 100%; min-height: 370px; display: flex; align-items: center; text-align: center; background: radial-gradient(circle at 0% 40%, #d9e9ff 0, #d9e9ff 130px, transparent 131px), radial-gradient(circle at 100% 70%, #d9e9ff 0, #d9e9ff 160px, transparent 161px), linear-gradient(110deg, #f3f8ff 0%, #ffffff 55%, #edf5ff 100%); position: relative; overflow: hidden; }
         .products-hero-content { width: 100%; max-width: 1200px; margin: 0 auto; padding: 70px 6%; position: relative; z-index: 2; }
         .products-hero .eyebrow { margin-bottom: 22px; }
         .products-hero h1 { font-size: clamp(48px, 5vw, 76px); line-height: 1; color: #10284a; font-weight: 800; margin: 0 0 25px; }
         .products-hero h1 span { color: #1268df; }
         .products-hero p { max-width: 750px; margin: 0 auto; color: #284a75; font-size: 20px; line-height: 1.6; }
-
         .products-main { width: 100%; background: #ffffff; }
         .products-section { width: min(1400px, 100%); margin: 0 auto; padding: 85px 6%; }
         .products-intro { max-width: 850px; margin-bottom: 50px; }
@@ -28,16 +20,14 @@
         .products-intro h2 { font-size: clamp(38px, 4vw, 58px); line-height: 1.05; color: #10284a; font-weight: 800; margin: 0 0 20px; }
         .products-intro h2 span { color: #1268df; }
         .products-intro p { font-size: 18px; line-height: 1.7; color: #405777; margin: 0; }
-
         .product-categories { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .product-card { background: #ffffff; border: 1px solid #dce7f4; border-radius: 12px; padding: 25px 30px 30px; min-height: 190px; box-shadow: 0 8px 25px rgba(16, 40, 74, 0.06); transition: transform 0.2s ease, box-shadow 0.2s ease; }
         .product-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(16, 40, 74, 0.10); }
-        .product-icon { width: 100%; height: 125px; display: flex; align-items: center; justify-content: center; background: #edf5ff; border-radius: 10px; font-size: 27px; margin-bottom: 22px; overflow: hidden; }
-        .product-icon.photo { background: #edf5ff; font-size: 0; }
-        .product-icon.photo img { width: 100%; height: 100%; display: block; object-fit: contain; padding: 8px; box-sizing: border-box; }
-        .product-card h3 { color: #10284a; font-size: 22px; line-height: 1.25; margin: 0 0 12px; font-weight: 700; }
-        .product-card p { color: #405777; font-size: 16px; line-height: 1.6; margin: 0; }
-
+        .product-icon { width: 100%; height: 150px; display: flex; align-items: center; justify-content: center; background: #ffffff; border-radius: 10px; margin-bottom: 18px; overflow: hidden; }
+        .product-icon.photo { background: #ffffff; font-size: 0; }
+        .product-icon.photo img { width: 100%; height: 100%; display: block; object-fit: contain; padding: 0; box-sizing: border-box; }
+        .product-card h3 { color: #10284a; font-size: 22px; line-height: 1.25; margin: 0; font-weight: 700; }
+        .product-card p { display: none; }
         .products-bottom { width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 6% 90px; }
         .products-bottom-inner { background: linear-gradient(135deg, #edf5ff 0%, #f7fbff 50%, #e6f1ff 100%); border-radius: 14px; padding: 55px 60px; text-align: center; }
         .products-bottom-inner .eyebrow { font-size: 14px; margin-bottom: 15px; }
@@ -45,99 +35,35 @@
         .products-bottom-inner p { max-width: 800px; margin: 0 auto 28px; color: #405777; font-size: 17px; line-height: 1.7; }
         .products-contact-btn { display: inline-flex; align-items: center; justify-content: center; background: #1268df; color: #ffffff; padding: 16px 28px; border-radius: 7px; font-size: 17px; font-weight: 700; transition: 0.2s ease; }
         .products-contact-btn:hover { background: #0958c6; transform: translateY(-2px); }
-
         .products-page .whatsapp { position: fixed !important; right: 25px !important; bottom: 25px !important; z-index: 9999 !important; width: auto !important; height: 58px !important; padding: 0 22px !important; margin: 0 !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 9px !important; background: #25D366 !important; color: #ffffff !important; border-radius: 30px !important; font-size: 15px !important; font-weight: 700 !important; line-height: 1 !important; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18); }
         .products-page .wa-icon { width: 22px !important; height: 22px !important; display: flex !important; align-items: center !important; justify-content: center !important; flex-shrink: 0 !important; }
         .products-page .wa-icon svg { width: 22px !important; height: 22px !important; display: block !important; fill: currentColor !important; }
         .products-page .whatsapp:hover { transform: translateY(-2px); }
-
         @media (max-width: 1100px) { .product-categories { grid-template-columns: repeat(2, 1fr); } }
-        @media (max-width: 900px) {
-            .products-hero { min-height: 300px; }
-            .products-hero-content { padding: 55px 7%; }
-            .products-section { padding: 65px 7%; }
-            .products-bottom { padding: 0 7% 65px; }
-            .products-bottom-inner { padding: 45px 30px; }
-            .product-categories { grid-template-columns: 1fr; }
-        }
-        @media (max-width: 600px) {
-            .products-hero h1 { font-size: 45px; }
-            .products-hero p { font-size: 17px; }
-            .products-section { padding: 55px 5%; }
-            .products-intro h2 { font-size: 40px; }
-            .product-card { padding: 22px 24px 28px; }
-            .product-icon { height: 115px; }
-            .products-bottom { padding: 0 5% 55px; }
-            .products-bottom-inner { padding: 38px 22px; }
-            .products-page .whatsapp { right: 15px !important; bottom: 15px !important; height: 52px !important; padding: 0 18px !important; font-size: 14px !important; }
-        }
+        @media (max-width: 900px) { .products-hero { min-height: 300px; } .products-hero-content { padding: 55px 7%; } .products-section { padding: 65px 7%; } .products-bottom { padding: 0 7% 65px; } .products-bottom-inner { padding: 45px 30px; } .product-categories { grid-template-columns: 1fr; } }
+        @media (max-width: 600px) { .products-hero h1 { font-size: 45px; } .products-hero p { font-size: 17px; } .products-section { padding: 55px 5%; } .products-intro h2 { font-size: 40px; } .product-card { padding: 22px 24px 28px; } .product-icon { height: 130px; } .products-bottom { padding: 0 5% 55px; } .products-bottom-inner { padding: 38px 22px; } .products-page .whatsapp { right: 15px !important; bottom: 15px !important; height: 52px !important; padding: 0 18px !important; font-size: 14px !important; } }
     </style>
 </head>
 <body class="products-page">
-
-<div class="top-bar">
-    <div class="top-bar-left">
-        <span>📍 Park House, Wilmington St, Leeds LS7 2BP</span><span>│</span><span>📞 +44 7979 192999</span><span>│</span><span>✉️ sptleedslimited@gmail.com</span>
-    </div>
-    <div class="top-bar-right"><span>🚚 Wholesale Prices</span><span>🛡 Trusted Supply</span><span>⚡ Fast Delivery</span></div>
-</div>
-
-<header class="main-header">
-    <div class="logo-container"><a href="index.html"><img src="assets/spt-leeds-logo.png" alt="SPT Leeds - Smart Parts Traders"></a></div>
-    <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <div class="dropdown"><a href="products.html" class="active">Products <span>⌄</span></a></div>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-        <a href="#" class="search-icon" aria-label="Search">⌕</a>
-        <a href="contact.html" class="header-button">Get In Touch <span>→</span></a>
-    </nav>
-</header>
-
-<section class="products-hero">
-    <div class="products-hero-content">
-        <div class="eyebrow">SPT LEEDS - SMART PARTS TRADERS</div>
-        <h1>Our <span>Products</span></h1>
-        <p>Quality mobile phone parts and accessories for repair shops, independent businesses and trade customers.</p>
-    </div>
-</section>
-
-<main class="products-main">
-<section class="products-section">
-    <div class="products-intro">
-        <div class="eyebrow">WHAT WE SUPPLY</div>
-        <h2>Mobile Parts & <span>Accessories</span></h2>
-        <p>We supply a growing range of mobile phone parts and accessories for repair shops, retailers and trade customers. Our range is continually expanding, so please contact us for current stock and availability.</p>
-    </div>
-
-    <div class="product-categories">
-        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/mobile-parts.svg" alt="Mobile phone parts"></div><h3>Mobile Phone Parts</h3><p>Reliable replacement parts for mobile phone repairs and servicing.</p></div>
-        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/lcds.svg" alt="Mobile LCDs"></div><h3>Mobile LCDs</h3><p>Mobile phone LCD displays and replacement screens for a range of devices.</p></div>
-        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/batteries.svg" alt="Mobile batteries"></div><h3>Mobile Batteries</h3><p>Replacement batteries suitable for mobile phone repair businesses.</p></div>
-        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/cases.svg" alt="Phone cases"></div><h3>Phone Cases</h3><p>Protective phone cases for different mobile devices and everyday use.</p></div>
-        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/screen-protectors.svg" alt="Screen protectors"></div><h3>Screen Protectors</h3><p>Screen protection products for mobile phones and everyday use.</p></div>
-        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/car-chargers.svg" alt="Car chargers"></div><h3>Car Chargers</h3><p>Convenient charging accessories for use in vehicles.</p></div>
-        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/car-holders.svg" alt="Car holders"></div><h3>Car Holders</h3><p>Practical phone holders and mounting accessories for vehicles.</p></div>
-        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/headphones.svg" alt="Headphones"></div><h3>Headphones</h3><p>Headphones and audio accessories for everyday mobile use.</p></div>
-        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/speakers.svg" alt="Speakers"></div><h3>Speakers</h3><p>Portable speakers and audio accessories.</p></div>
-        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/otg.svg" alt="OTG accessories"></div><h3>OTG Accessories</h3><p>OTG accessories and connectivity solutions for compatible devices.</p></div>
-        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/power-banks.svg" alt="Power banks"></div><h3>Power Banks</h3><p>Portable power banks and charging solutions for mobile devices and everyday use.</p></div>
-        <div class="product-card"><div class="product-icon photo"><img src="assets/product-images/repair-tools.svg" alt="Repair tools and accessories"></div><h3>Repair Tools &amp; Accessories</h3><p>Repair tools and accessories for mobile phone servicing and repairs.</p></div>
-    </div>
-</section>
-
-<section class="products-bottom">
-    <div class="products-bottom-inner">
-        <div class="eyebrow">WHOLESALE SUPPLY</div>
-        <h2>Wholesale Supply for Trade Customers</h2>
-        <p>We are continually expanding our range of mobile phone parts and accessories. For current stock, availability and wholesale pricing, please get in touch with our team.</p>
-        <a href="contact.html" class="products-contact-btn">Get In Touch →</a>
-    </div>
-</section>
-</main>
-
-<a href="https://wa.me/447979192999" class="whatsapp" target="_blank" rel="noopener" aria-label="Chat with SPT Leeds on WhatsApp">
-    <span class="wa-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.82 3 3 8.82 3 16c0 2.3.6 4.55 1.74 6.54L3.1 29l6.65-1.61A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3Zm0 23.7c-2.05 0-4.06-.55-5.82-1.6l-.42-.25-3.95.96.97-3.85-.27-.44A10.73 10.73 0 1 1 16 26.7Z"/><path d="M21.88 18.65c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.52-.16-.74.16-.22.32-.85 1.05-1.04 1.27-.19.22-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.6-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.5.14-.66.14-.14.32-.38.48-.57.16-.19.22-.32.33-.54.11-.22.05-.41-.03-.57-.08-.16-.74-1.78-1.01-2.44-.27-.65-.54-.56-.74-.57h-.63c-.22 0-.57.08-.87.41-.3.32-1.14 1.11-1.14 2.71s1.17 3.14 1.33 3.36c.16.22 2.61 3.98 6.32 5.58.88.38 1.57.61 2.11.78.89.28 1.7.24 2.34.15.71-.11 2.2-.9 2.51-1.77.31-.87.31-1.61.22-1.77-.09-.16-.32-.24-.64-.4Z"/></svg></span>
-</a>
+<div class="top-bar"><div class="top-bar-left"><span>📍 Park House, Wilmington St, Leeds LS7 2BP</span><span>│</span><span>📞 +44 7979 192999</span><span>│</span><span>✉️ sptleedslimited@gmail.com</span></div><div class="top-bar-right"><span>🚚 Wholesale Prices</span><span>🛡 Trusted Supply</span><span>⚡ Fast Delivery</span></div></div>
+<header class="main-header"><div class="logo-container"><a href="index.html"><img src="assets/spt-leeds-logo.png" alt="SPT Leeds - Smart Parts Traders"></a></div><nav class="main-nav"><a href="index.html">Home</a><div class="dropdown"><a href="products.html" class="active">Products <span>⌄</span></a></div><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="#" class="search-icon" aria-label="Search">⌕</a><a href="contact.html" class="header-button">Get In Touch <span>→</span></a></nav></header>
+<section class="products-hero"><div class="products-hero-content"><div class="eyebrow">SPT LEEDS - SMART PARTS TRADERS</div><h1>Our <span>Products</span></h1><p>Quality mobile phone parts and accessories for repair shops, independent businesses and trade customers.</p></div></section>
+<main class="products-main"><section class="products-section"><div class="products-intro"><div class="eyebrow">WHAT WE SUPPLY</div><h2>Mobile Parts & <span>Accessories</span></h2><p>We supply a growing range of mobile phone parts and accessories for repair shops, retailers and trade customers. Our range is continually expanding, so please contact us for current stock and availability.</p></div>
+<div class="product-categories">
+<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:0% 0%" alt="Mobile phone parts"></div><h3>Mobile Phone Parts</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:50% 0%" alt="Mobile LCDs"></div><h3>Mobile LCDs</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:100% 0%" alt="Mobile Batteries"></div><h3>Mobile Batteries</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:0% 33.333%" alt="Phone Cases"></div><h3>Phone Cases</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:50% 33.333%" alt="Screen Protectors"></div><h3>Screen Protectors</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:100% 33.333%" alt="Car Chargers"></div><h3>Car Chargers</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:0% 66.666%" alt="Car Holders"></div><h3>Car Holders</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:50% 66.666%" alt="Headphones"></div><h3>Headphones</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:100% 66.666%" alt="Speakers"></div><h3>Speakers</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:0% 100%" alt="OTG Accessories"></div><h3>OTG Accessories</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:50% 100%" alt="Power Banks"></div><h3>Power Banks</h3></div>
+<div class="product-card"><div class="product-icon photo"><img src="assets/product-images/product-categories-sprite.jpg" style="object-position:100% 100%" alt="Repair Tools and Accessories"></div><h3>Repair Tools &amp; Accessories</h3></div>
+</div></section>
+<section class="products-bottom"><div class="products-bottom-inner"><div class="eyebrow">WHOLESALE SUPPLY</div><h2>Wholesale Supply for Trade Customers</h2><p>We are continually expanding our range of mobile phone parts and accessories. For current stock, availability and wholesale pricing, please get in touch with our team.</p><a href="contact.html" class="products-contact-btn">Get In Touch →</a></div></section></main>
+<a href="https://wa.me/447979192999" class="whatsapp" target="_blank" rel="noopener" aria-label="Chat with SPT Leeds on WhatsApp"><span class="wa-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.82 3 3 8.82 3 16c0 2.3.6 4.55 1.74 6.54L3.1 29l6.65-1.61A12.94 12.94 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3Zm0 23.7c-2.05 0-4.06-.55-5.82-1.6l-.42-.25-3.95.96.97-3.85-.27-.44A10.73 10.73 0 1 1 16 26.7Z"/><path d="M21.88 18.65c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.52-.16-.74.16-.22.32-.85 1.05-1.04 1.27-.19.22-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.6-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.5.14-.66.14-.14.32-.38.48-.57.16-.19.22-.32.33-.54.11-.22.05-.41-.03-.57-.08-.16-.74-1.78-1.01-2.44-.27-.65-.54-.56-.74-.57h-.63c-.22 0-.57.08-.87.41-.3.32-1.14 1.11-1.14 2.71s1.17 3.14 1.33 3.36c.16.22 2.61 3.98 6.32 5.58.88.38 1.57.61 2.11.78.89.28 1.7.24 2.34.15.71-.11 2.2-.9 2.51-1.77.31-.87.31-1.61.22-1.77-.09-.16-.32-.24-.64-.4Z"/></svg></span></a>
 </body>
 </html>
